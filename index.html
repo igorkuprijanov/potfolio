@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Igor Kuprijanov - portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pageicon.ico">
+</head>
+<body>
+ 
+     <div id="loaderContainer">
+        <div id="spinnerContainer">
+           <div id="spinner1"></div> 
+        </div>
+        <div id="spanContainer">
+        <span>Loading</span>
+        <span id="loadingText"></span>
+        </div>
+    </div>
+  
+  <div id='navigationContainer'>
+     
+     <div id='navigatorContainer'>
+          
+      </div>
+      
+  </div>
+   
+    <section id='openingSection' name='Introduction'>
+        <div id='openingContainerInner'>
+        <video autoplay muted loop id='openingVideo'>
+           <source src="assets/openingbackground.mp4" type="video/mp4">
+       </video>
+        <h1>Welcome to my portfolio, do have a look around</h1>
+        <div id='objectsContainer'>
+            <div class='objectContainer'>
+                <canvas id='computerModel'></canvas>
+            </div>
+            <div class='objectContainer'>
+                <canvas id='fileModel'></canvas>
+            </div>
+            <div class='objectContainer'>
+                <canvas id='personModel'></canvas>
+            </div>
+        </div>
+        <p>Follow these links to move to the most interesting parts faster</p>
+        <div id='linksContainer'>
+            <a  class="link" onmouseover="linkHoverEvent()" onclick='linkClickEvent(event)' onmouseout="linkHoverOffEvent()">About</a>
+            <a  class="link" onmouseover="linkHoverEvent()" onclick='linkClickEvent(event)' onmouseout="linkHoverOffEvent()">Projects</a>
+            <a  class="link" onmouseover="linkHoverEvent()" onclick='linkClickEvent(event)' onmouseout="linkHoverOffEvent()">Contacts</a>
+        </div>
+        </div>
+    </section>
+    
+    <section id='aboutSection' name='About'>
+        <div id='aboutInnerContainer'>
+            <div class='aboutTopHalf'>
+                <div id='topLeftTextContainer'>
+                    <h1>A little bit about me</h1>
+                </div>
+                <div class="aboutText" id='topRightTextContainer'>
+                    <h2>Education and certificates</h2>
+                    <div>
+                    <p>In terms of education and accreditation, I have certificates in </p> <a target="_blank" href="assets/Front%20end%20Libraries%20Certification.pdf">Front-end libraries</a><p> as well as </p> <a target="_blank" href="assets/Responsive%20Design%20Certification.pdf">Responsive design</a><p> and also in</p> <a target="_blank" href="assets/Javascript%20and%20Algorithms%20Certification.pdf">Javascript algorithms and data structures</a><p> from a well known web learning platform</p> <a target="_blank" href='https://www.freecodecamp.org/'>(FCC)</a><p>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class='aboutBottomHalf'>
+                <div class="aboutBottomContainer aboutText" id='bottomLeftTextContainer'>
+                    <h2>Background</h2>
+                    <p>My name is Igor Kuprijanov and I develop websites. I am originally from Tallinn, Estonia yet currently I live in Rotterdam, the Netheralnds. I am fluent in Estonian, Russian and English languages.</p>
+                    <div id="pictureParagraph">
+                        <p>I am a self-thougth developer, thus I encourage you to judge my skills and knowlage by my works listend on this website.</p>
+                        <div id='picture'><img src="./assets/myphoto.jpg" alt="my photo"></div>
+                    </div>
+                    <p>In development my most important tool is JavaScript, which I use in front-end as well as in back-end.</p>
+                </div>
+                <div class="aboutBottomContainer aboutText" id='bottomRightTextContainer'>
+                    <h2>Skills and abilities</h2>
+                    <div>
+                        <h3>Languages and frameworks</h3>
+                        <div id="languagesAndFrameworks" class="icons">
+                            <div class="iconContainer">
+                                <img name='html' class="techIcon" src="assets/html-5.svg" alt="html">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='javascript' class="techIcon" src="assets/js.png" alt='javascript'>
+                            </div>
+                            <div class="iconContainer">
+                                <img name='css' class="techIcon" src="assets/css-3.svg">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='nodejs' class="rectangleLogo techIcon" src="assets/node.png" alt="node js">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='express' class="techIcon" src="assets/Expressjs.png" alt="express, framework for node">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='react' class="techIcon" src="assets/physics.svg" alt="react framework">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Most used libraries</h3>
+                        <div id="mostUsedLibraries"  class="icons">
+                            <div class="iconContainer">
+                                <img name='sass' class="rectangleLogo techIcon" src="assets/sass.png" alt="sass css preproccessor">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='threejs' class="techIcon" src="assets/threejs.png" alt="three js 3d library">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='bootstrap' class="techIcon" src="assets/bootstrap.png" alt='bootstrap visual library'>
+                            </div>
+                            <div class="iconContainer">
+                                <img name='animejs' class="techIcon rectangleLogo" src='assets/animejs.webp' alt="anime js animation library">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='webrtc' class="techIcon" src="assets/webrtc.png" alt='webrtc communication library'>
+                            </div>
+                            <div class="iconContainer">
+                                <img name='animatecss' class="techIcon" src="assets/animatecss.png" alt="animate css animation library">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='redux' class="techIcon" src="assets/redux.png" alt="redux state management system">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='socketio' class="techIcon" src="assets/socketio.svg" alt="socket.io communication library">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Tools and programms</h3>
+                        <div id='toolsAndProgramms'  class="icons">
+                            <div class="iconContainer">
+                                <img name='figma' class="techIcon" src="assets/figma.png" alt='figma graphical software'>
+                            </div>
+                            <div class="iconContainer">
+                                <img name='git' class="techIcon" src="assets/git.png" alt="git version control">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='npm' class="techIcon rectangleLogo" src="assets/npm.png" alt="npm contend delivery network">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='atom' class="techIcon" src="assets/atom.png" alt="atom text editor">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='windows' class="techIcon" src='assets/windows.png' alt="windows operating system">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='mongodb' class="techIcon" src="assets/mongodb.png" alt="mongo db">
+                            </div>
+                            <div class="iconContainer">
+                                <img name='blender' class="rectangleLogo techIcon" src="assets/blender.png" alt="blender 3d software">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id='project1Section' class="projectSection" name='Project 1'>
+       <video autoplay muted loop>
+           <source src='assets/bg1.webm' type="video/webm">
+       </video>
+        <div class='sidePanel'>
+           <div class='blurPanel'></div>
+            <h1>The ChatApp</h1>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/websiteicon.svg" alt="website icon">
+                <a target="_blank" href="https://reverent-goldwasser-83c1d0.netlify.app/">Website link</a>
+            </div>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/githubicon.svg" alt="github icon">
+                <a target="_blank" href="https://github.com/igorkuprijanov/chatapp.git">GitHub link</a>
+            </div>
+            <p>This is a video chat application that lets two clients connect and share video and audio tracks between each other. There is also a disable video and disable audi options. In addition it includes a real-time chat with emojis. A room is only created when the first person joins and then the second person can join already existing room, when bouth parties leave the room it gets deleted. Joining the room works by 'invitation' which is a simple room nuber that is either randomly generated or can be manually named.</p>
+            <button id="project1ExpandButton" class='projectExpandButton'>Learn more</button>
+        </div>
+        <div id="project1Full" class="projectExpanded">
+            <h1 class="projectTitle">The ChatApp</h1>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+                <div class="projectImageContainer">
+                    <img alt='project screenshot' src="assets/project1screenshot1.webp" class="horizontalImage">
+                </div>
+                <div class="projectDescriptionText">
+                <h2>Description</h2>
+                <p>This is a video chat application that lets two clients connect and share video and audio tracks between each other. There is also a disable video and disable audi options. In addition it includes a real-time chat with emojis. A room is only created when the first person joins and then the second person can join already existing room, when bouth parties leave the room it gets deleted.</p>
+                </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-right: 1000px;">
+               <div class="projectDescriptionText">
+                <h2>Technicalities</h2>
+                <p>Application front-end is written using React and is hosted on Netlify. The back-end is written using NodeJS and is hosted separately on Google Cloud Platform. To establish the connection the app uses HTTP long polling protocol provided by Socket.IO. Then it uses WebRTC to send and recieve video/audio data. The chat functionality is also powered by Socket.IO.</p>
+                </div>
+                <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project1screenshot2.webp" class="verticalImage">
+              </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+              <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project1screenshot3.webp" class="horizontalImage">
+              </div>
+               <div class="projectDescriptionText">
+                <h2>Overview</h2>
+                <p>Although there are plenty of similar commercial applications available, it was interesting to recreate somehting like that, especially when everybody uses a similar application for their work needs. While working on this project I learned alot about back-end development and web protocols, as well as generally establishing connection between two clients.</p>
+                </div>
+            </div>
+            <button id="project1ShrinkButton" class="showLessProjectButton">Show less</button>
+        </div>
+    </section>
+    
+    
+    <section id='project2Section' class="projectSection" name='Project 2'>
+       <video autoplay muted loop id="project2video">
+           <source src='assets/bg2.webm' type="video/webm">
+       </video>
+        <div class='sidePanel'>
+           <div class='blurPanel'></div>
+            <h1>Notation app</h1>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/websiteicon.svg" alt="website icon">
+                <a target="_blank" href="https://intense-thicket-86868.herokuapp.com/">Website link</a>
+            </div>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/githubicon.svg" alt="github icon">
+                <a target="_blank" href="https://github.com/igorkuprijanov/notesApp">GitHub link</a>
+            </div>
+            <p>This is a notepad application, which includes different types of tasks such as timed , checklist, countable and standart tasks. A user is able to make an account and keep track of their personal notes and tasks. There is also a function to retrieve a password, in case a user has forgotten it. Also each user can be deleted if there is no longer a need for it. Application includes a filter to order the tasks and all the tasks can be dynamically changed. Also a user can choose their profile picture and also upload their own.</p>
+            <button id="project2ExpandButton" class='projectExpandButton'>Learn more</button>
+        </div>
+        <div id="project2Full"  class="projectExpanded">
+            <h1 class="projectTitle">The Notation application</h1>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+                <div class="projectImageContainer">
+                    <img alt='project screenshot' src="assets/project2screenshot1.webp" class="horizontalImage">
+                </div>
+                <div class="projectDescriptionText">
+                <h2>Description</h2>
+                <p>This is a notepad application, which includes different types of tasks such as timed , checklist, countable and standart tasks. A user is able to make an account and keep track of their personal notes and tasks. There is also a function to retrieve a password, in case a user has forgotten it. Also each user can be deleted if there is no longer a need for it. Application includes a filter to order the tasks and all the tasks can be dynamically changed. Also a user can choose their profile picture and also upload their own.</p>
+                </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-right: 1000px;">
+               <div class="projectDescriptionText">
+                <h2>Technicalities</h2>
+                <p>The application front-end is uses vanilla HTML, CSS and JavaScript without any frameworks, whcih is hosted together with the backend. The back-end is written in JavaScript using Node.js and Express framework. It is hosted on Heroku platform and uses MongoDB to store all the users and user data.</p>
+                </div>
+                <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project2screenshot2.webp" class="verticalImage">
+              </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+              <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project2screenshot3.webp" class="horizontalImage">
+              </div>
+               <div class="projectDescriptionText">
+                <h2>Overview</h2>
+                <p>This is a rather classic todo list app. It was interesting to work on the project because of all the additional function, all the different task types, database work and backend work gave me an insight on how to manage different users and unique user data.</p>
+                </div>
+            </div>
+            <button id="project2ShrinkButton" class="showLessProjectButton">Show less</button>
+        </div>
+    </section>
+    
+    
+    <section id='project3Section' class="projectSection" name='Project 3'>
+       <video autoplay muted loop id="project3video">
+           <source src='assets/bg3.webm' type="video/webm">
+       </video>
+        <div class='sidePanel'>
+           <div class='blurPanel'></div>
+            <h1>Restaurant landing page</h1>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/websiteicon.svg" alt="website icon">
+                <a target="_blank" href="https://musing-aryabhata-7cf8c4.netlify.app/">Website link</a>
+            </div>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/githubicon.svg" alt="github icon">
+                <a target="_blank" href="https://github.com/igorkuprijanov/restolandingpage">GitHub link</a>
+            </div>
+            <p>This is a landing page for an italian restaurant. It includes the whole menu, some info about the restaurant and the staff all stylized as menu cards. It also has a 'book a table' function. </p>
+            <button id="project3ExpandButton" class='projectExpandButton'>Learn more</button>
+        </div>
+        <div id="project3Full" class="projectExpanded">
+            <h1 class="projectTitle">Delicatesso restorante</h1>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+                <div class="projectImageContainer">
+                    <img alt='project screenshot' src="assets/project3screenshot1.webp" class="horizontalImage">
+                </div>
+                <div class="projectDescriptionText">
+                <h2>Description</h2>
+                <p>This is a landing page for an italian restaurant. It includes the whole menu, some info about the restaurant and the staff all stylized as menu cards. It also has a 'book a table' function.</p>
+                </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-right: 1000px;">
+               <div class="projectDescriptionText">
+                <h2>Technicalities</h2>
+                <p>Since it's a landing page, it only has a front-end part. It is hosted on Netlify and is written using only vanilla HTML, CSS and JavaScript. For animations I used a very convenient CSS library - Animate.css.  </p>
+                </div>
+                <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project3screenshot2.webp" class="verticalImage">
+              </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+              <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project3screenshot3.webp" class="horizontalImage">
+              </div>
+               <div class="projectDescriptionText">
+                <h2>Overview</h2>
+                <p>There are a lot of restaurants. There are a lot of landing pages. Most of them are rather dull and boring. The goal of this project was to make a simple, yet pretty and interactive landing page for a very common type of business, which, I think, was well accomplished.</p>
+                </div>
+            </div>
+            <button id="project3ShrinkButton" class="showLessProjectButton">Show less</button>
+        </div>
+    </section>
+    
+     <section id='project4Section' class="projectSection" name='Project 4'>
+       <video autoplay muted loop id="project3video">
+           <source src='assets/bg4.webm' type="video/webm">
+       </video>
+        <div class='sidePanel'>
+           <div class='blurPanel'></div>
+            <h1>Refund app</h1>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/websiteicon.svg" alt="website icon">
+                <a target="_blank" href="https://nostalgic-yalow-ee6263.netlify.app/">Website link</a>
+            </div>
+            <div class="projectLinkContainer">
+                <img class="projectIcon" src="assets/githubicon.svg" alt="github icon">
+                <a target="_blank" href="https://github.com/igorkuprijanov/refundapp">GitHub link</a>
+            </div>
+            <p>Originally made as a part of a coding challange, this is an application that lets a user to scan a qr code of a product and recieve a refund for that product after specifying percentage for which the refund has to be made. It has a visual signal on how the refunding proccess is going, ehither it has been refunded, the app is processing data or the refund has been denied. There is an account costumability page and a qr sacanner built in. However, it is not acutally possible to make an account, so I'd advise skiping login.</p>
+            <button id="project4ExpandButton" class='projectExpandButton'>Learn more</button>
+        </div>
+        <div id="project4Full" class="projectExpanded">
+            <h1 class="projectTitle">Refundabilty</h1>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+                <div class="projectImageContainer">
+                    <img alt='project screenshot' src="assets/project4screenshot1.webp" class="horizontalImage">
+                </div>
+                <div class="projectDescriptionText">
+                <h2>Description</h2>
+                <p>Originally made as a part of a coding challange, this is an application that lets a user to scan a QR code of a product and recieve a refund for that product after specifying percentage for which the refund has to be made. It has a visual signal on how the refunding proccess is going, ehither it has been refunded, the app is processing data or the refund has been denied. There is an account costumability page and a QR sacanner built in. However, it is not acutally possible to make an account, so I'd advise skiping login.</p>
+                </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-right: 1000px;">
+               <div class="projectDescriptionText">
+                <h2>Technicalities</h2>
+                <p>The app consists of only a front-end part, which is written using React framework and a React QR Reader package to scan in the QR codes. It is hosted on Netlify.</p>
+                </div>
+                <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project4screenshot2.webp" class="verticalImage">
+              </div>
+            </div>
+            <div class="projectDescriptionContainer" style="margin-left: 1000px;">
+              <div class="projectImageContainer">
+                  <img alt='project screenshot' src="assets/project4screenshot3.webp" class="horizontalImage">
+              </div>
+               <div class="projectDescriptionText">
+                <h2>Overview</h2>
+                <p>This application was originally done for a code challange organised by <a target='_blank' href="https://summitto.com/" style="display: inline">Sumitto</a> and I really enjoyed participating. It was for the first time I worked with such I/O as a camera, before I didn't really think that it coulbe used for something useful at all. Overal it was a very fun learning experience.</p>
+                </div>
+            </div>
+            <button id="project4ShrinkButton" class="showLessProjectButton">Show less</button>
+        </div>
+    </section>
+    
+    
+    
+    <section id='contactsSection' name='Contacts'>
+      <div id="contactsContainer">
+       <div>
+           <canvas id="bgCanvas"></canvas>
+       </div>
+       <div id="contactsSide">
+        <div id="formContainer">
+            <form id="form">
+              <h1>Send me a message!</h1>
+               <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input id='nameInput' placeholder='John Doe' name='user_name'>
+                <label>Company</label>
+                <input id="companyInput" placeholder="SomeCompany INC" name='company_name'>
+                <label>Your e-mail</label>
+                <input id="emailInput" placeholder="your.post@mail.com" name="user_email">
+                <label>Message</label>
+                <textarea id="messageInput" placeholder="Yourm essage here" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="models.js"></script>
+    <script src="key.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
